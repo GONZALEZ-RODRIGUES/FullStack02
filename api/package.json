@@ -7,7 +7,9 @@
     "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js",
     "migrate": "knex migrate:latest",
-    "seed": "knex seed:run"
+    "seed": "knex seed:run",
+    "start-both": "npm start & (cd ../frontend && npm start)",
+    "build-both": "npm install & (cd ../frontend && npm run build)"
   },
   "author": "",
   "license": "ISC",
